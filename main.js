@@ -29,8 +29,7 @@ function gotResult(error,results){
 
       
       document.getElementById("result_object_name").innerHTML=results[0].label;
-      confidence=results[0].confidence.toFixed(5)
-      document.getElementById("result_object_accurancy").innerHTML=confidence*100;
+      document.getElementById("result_object_accurancy").innerHTML=results[0].confidence.toFixed(3);
     }
   }
 }
